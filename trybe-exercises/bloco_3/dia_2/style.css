@@ -1,0 +1,72 @@
+h2{
+    color: rgb(40, 139, 45);
+    font-size: 2em;
+    text-shadow: 2px 2px 5px rgb(179, 172, 172);
+}
+body{
+    background-color:rgb(255, 400, 200);
+    margin: 5%; 
+    font-size: 20px; 
+    font-family: 'Overlock SC', cursive;          
+}
+p{            
+    font-size: 18px;
+    padding: 22px;
+    /* font-family: 'Overlock SC', cursive; */
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+    border: 1px dashed rgb(180, 170, 170);
+    line-height: 30px;
+}
+#extinct-specie{
+    background-color: rgb(255, 200, 200);
+    box-shadow: 5px 5px 5px 0px rgb(199, 175, 175);
+}
+#description{
+    color: rgb(230, 150, 3);
+}
+.list-style{
+    background-color: rgba(59, 59, 250, 0.856);
+    color:white;
+    list-style: none;
+    box-shadow: 5px 5px 8px 0px rgb(153, 154, 238);
+    font-style: italic;
+    line-height: 40px;
+    text-align: center;
+    /* text-decoration: underline; */
+    width: 35%;  
+    padding-right: 25px;
+    border: 2px solid rgb(195, 196, 223);
+     
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+section{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+.container2{
+    display: inline-block;    
+    justify-content: center;
+    align-items: center; 
+}
+.container2.img{
+    margin: 5px 20px 0px 20px;
+}
+img{
+    box-shadow: 5px 5px 8px 0px rgb(173, 149, 129);
+    border: 2px solid rgba(116, 75, 23, 0.822);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+h1{
+    font-size: 3em;
+    text-shadow: 2px 3px 5px grey;
+}
