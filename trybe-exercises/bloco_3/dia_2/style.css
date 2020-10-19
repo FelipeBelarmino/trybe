@@ -6,13 +6,17 @@ h2{
 body{
     background-color:rgb(255, 400, 200);
     margin: 5%; 
-    font-size: 20px;           
+    font-size: 20px; 
+    font-family: 'Overlock SC', cursive;          
 }
 p{            
-    font-size: 16px;
-    padding: 20px;
-    font-family: 'Fredericka the Great', cursive;
-    font-weight: bold;
+    font-size: 18px;
+    padding: 22px;
+    /* font-family: 'Overlock SC', cursive; */
+    /* font-weight: bold; */
+    letter-spacing: 2px;
+    border: 1px dashed rgb(180, 170, 170);
+
 }
 #extinct-specie{
     background-color: rgb(255, 200, 200);
