@@ -1,5 +1,5 @@
 h2{
-    color: rgb(40, 139, 45);
+    color: rgb(53, 82, 55);
     font-size: 2em;
     text-shadow: 2px 2px 5px rgb(179, 172, 172);
 }
@@ -23,7 +23,7 @@ p{
     box-shadow: 5px 5px 5px 0px rgb(199, 175, 175);
 }
 #description{
-    color: rgb(230, 150, 3);
+    color: rgb(119, 95, 50);
 }
 .list-style{
     background-color: rgba(110, 110, 170, 0.856);
@@ -36,7 +36,7 @@ p{
     /* text-decoration: underline; */
     width: 35%;  
     padding-right: 25px;
-    border: 2px solid rgb(195, 196, 223);
+    border: 2px solid rgb(108, 109, 141);
      
 }
 .container{
@@ -60,7 +60,7 @@ section{
 }
 img{
     box-shadow: 5px 5px 8px 0px rgb(173, 149, 129);
-    border: 2px solid rgba(116, 75, 23, 0.822);
+    border: 2px solid rgba(163, 153, 139, 0.822);
     display: flex;
     flex-direction: column;
     justify-content: center;
