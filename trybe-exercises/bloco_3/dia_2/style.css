@@ -68,10 +68,14 @@ img{
 }
 h1{
     font-size: 3em;
-    text-shadow: 2px 3px 5px grey;
+    text-shadow: 2px 3px 5px rgb(85, 69, 69);
+    font-family: 'Odibee Sans', cursive;
+    color: rgb(61, 53, 53);
+    letter-spacing: 10px;
+    
 }
 .seta{
     width:50px;    
     border:none;
-    box-shadow: none;
+    box-shadow: none;    
 }
