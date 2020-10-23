@@ -11,3 +11,5 @@ if (trybe >= 14 && trybe <14.40){
 } else {
     console.log("Fora dos momentos sincronos")
 }
+
+
