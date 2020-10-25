@@ -1,3 +1,0 @@
-# Projeto Lessons Learned
-
-
