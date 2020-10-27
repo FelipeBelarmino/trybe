@@ -7,5 +7,4 @@ for (let i = 1; i < array.length; i++) {
       array[j] = position;
     }
   }
-}
-console.log(array);
+}console.log(array);
