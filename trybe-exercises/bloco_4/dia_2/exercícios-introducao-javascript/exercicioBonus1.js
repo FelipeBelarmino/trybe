@@ -1,9 +1,10 @@
-let array = [45, 27, 57, 1330, 560, 800, 200, 70, 945, 54];
+let array = [5, 3, 2, 4, 7, 1, 0, 6];
+let position = 0;
 
 for (let i = 1; i < array.length; i++) {
   for (let j = 0; j < i; j++) {
     if (array[i] < array[j]) {
-      let position = array[i];
+      position = array[i];
 
       array[i] = array[j];
       array[j] = position;
@@ -11,4 +12,4 @@ for (let i = 1; i < array.length; i++) {
   }
 }
 
-console.log(position);
+console.log(array);
