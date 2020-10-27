@@ -1,7 +1,7 @@
 let posicaoRainhaLinha=4;
 let posicaoRainhaColuna=4;
-let posicaoPecaLinha=4;
-let posicaoPecaColuna=4;
+let posicaoPecaLinha=5;
+let posicaoPecaColuna=0;
 let ataqueBemSucedido=false;
 
 
