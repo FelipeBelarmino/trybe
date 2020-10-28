@@ -5,5 +5,5 @@ let info = {
   };
   info["recorrente"]="sim"; // cria um novo item no objeto
   for(let i in info){
-      console.log(i)
+      console.log(info[i])
   }
