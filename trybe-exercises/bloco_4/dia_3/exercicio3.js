@@ -1,6 +1,12 @@
-let n = 5;
+// let n = 5;
 
-for(let i = 0; i < n; i++){ 
-    // console.log("-".repeat([i-1])) 
-    console.log("*".repeat(n-(n-(i+2))))
-}
+// for(let i = 0; i < n; i++){ 
+//     if([i+1]==n){
+//         console.log("*".repeat(n))
+//     }else{
+//         console.log("-".repeat(i))
+//     }
+//     // console.log("*".repeat(n))
+// }
+
+
