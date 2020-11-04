@@ -64,64 +64,48 @@
 
         //2
         let div = document.createElement('div');  
-        document.body.appendChild(div);     
-        div.className = "main-content"
+        document.body.appendChild(div).className = "main-content"     
+        
 
         //3
         let divCenter = document.createElement('div');
-        div.appendChild(divCenter);
-        divCenter.className="center-content"
+        div.appendChild(divCenter).className="center-content"
+        
 
         //4
         let h1DivCenter = document.createElement('h1');
-        divCenter.appendChild(h1DivCenter)
-        h1DivCenter.innerText = "Este é o H1 filho da divCenter"
+        divCenter.appendChild(h1DivCenter).innerText = "Este é o H1 filho da divCenter"
+        
 
         //5
         let divLeft = document.createElement('div');
-        div.appendChild(divLeft)
-        divLeft.className = "left-content"
+        div.appendChild(divLeft).className = "left-content"
+        
 
         //6
         let divRight = document.createElement('div');
-        div.appendChild(divRight)
-        divRight.className = "right-content"
+        div.appendChild(divRight).className = "right-content"
+        
 
         //7
         let imgLeft = document.createElement('img');
-        divLeft.appendChild(imgLeft)
+        divLeft.appendChild(imgLeft).className="small-image"
         imgLeft.src = "https://picsum.photos/200"
-        imgLeft.className="small-image"
+        
 
         //8
         // let ingredientItems = document.createElement('ul');
-        divRight.appendChild(ingredientItems)
-
-        ingredientItems.className = "ingredients-list"
-        
-        let ingredientItems = [
-        '200g de toucinho',
-        '1 concha de óleo',          
-        '1 cebola média picada',
-        '4 dentes de alho',
-        '5 ovos',
-        '1 colher de sopa de sal com alho',
-        'Cheiro verde a gosto',
-        '200g de farinha de mandioca'
-        ];
-
-        let ingredientList = document.querySelector('.ingredients-list');
-
-        for (let i = 0; i < ingredientItems.length;i+=1){
-            let ingredient = ingredientItems[i];
-
-            let ingredientListItem = document.createElement('li');
-
-            ingredientListItem.innerText = ingredient;
-
-            ingredientListItem.className = "ingredients-list-item"
-
-            ingredientList.appendChild(ingredientListItem);
+        let divRightUl = document.createElement('ul');
+        divRight.appendChild(divRightUl)
+        divRightUl.className = "ingredients-list"        
+        let divRightUlItems = ['Um','Dois','Três','Quatro','Cinco','Seis','Sete','Oito','Nove','Dez'];
+        let divRightUlList = document.querySelector('.ingredients-list');
+        for (let i = 0; i < divRightUlItems.length;i+=1){
+            let numero = divRightUlItems[i];
+            let divRightUlListItem = document.createElement('li');
+            divRightUlListItem.innerText = numero;
+            divRightUlListItem.className = "ingredients-list-item"
+            divRightUlList.appendChild(divRightUlListItem);
         }
 
         
