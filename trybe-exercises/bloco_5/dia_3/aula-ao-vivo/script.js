@@ -11,8 +11,8 @@ window.onload = function (){
     let car1 = document.querySelector('.car1');
     let car2 = document.querySelector('.car2');
 
-    car1.style.marginLeft = '0px'
-    car2.style.marginLeft = '0px'
+    car1.style.marginLeft = '0px';
+    car2.style.marginLeft = '0px';
     //1 parametro qual o tipo de evento que devo escutar?
     //2 parametro o que eu faço quando esse evento ocorrer?
     button.addEventListener('click', function (){ // novamente uma função anonima como segundo parametro do eventlistener
@@ -20,9 +20,22 @@ window.onload = function (){
 
         car1.style.marginLeft = parseInt(car1.style.marginLeft) + (Math.random() * 100) + 'px';
         car2.style.marginLeft = parseInt(car2.style.marginLeft) + (Math.random() * 100) + 'px';
-    })
-}
 
+        if (parseInt(car1.style.marginLeft) > window.innerWidth){
+            alert('Carro vermelho ganhou')
+            resetCars(car1,car2)
+        } 
+        if (parseInt(car2.style.marginLeft) > window.innerWidth){
+            alert('Carro verde ganhou')
+            resetCars(car1,car2)
+        } 
+    });
+};
+
+function resetCars(car1,car2){
+    car1.style.marginLeft = '0px';
+    car2.style.marginLeft = '0px';
+}
 
 
 
