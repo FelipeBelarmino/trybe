@@ -114,8 +114,6 @@
         divRightUlList.appendChild(divRightUlListItem);
       }
 
-
-      
       //9
       let h3_1 = document.createElement("h3");
       let h3_2 = document.createElement("h3");
@@ -124,42 +122,40 @@
       div.appendChild(h3_2);
       div.appendChild(h3_3);
 
-
-
       //Segunda parte
 
       //1
-      h1.className = "title"
-      
+      h1.className = "title";
+
       //2
-      h3_1.className = "description"
-      h3_2.className = "description"
-      h3_3.className = "description"
+      h3_1.className = "description";
+      h3_2.className = "description";
+      h3_3.className = "description";
 
       //3
-      div.removeChild(divLeft)
+      div.removeChild(divLeft);
 
       //4
-      divRight.style.margin = "auto"
+      divRight.style.margin = "auto";
 
       //5
-      div.style.backgroundColor = "green"
+      div.style.backgroundColor = "green";
 
       //6
-    //   let ultimo = document.getElementsByClassName('ingredients-list')[9]
-    //   divRightUlList.removeChild(ultimo)  
-      
-      
-
-    let ingredientListItems = document.querySelectorAll('.ingredients-list-item');
-
-    for(let i=0;i<ingredientListItems.length;i+=1){
+      let ingredientList = document.querySelector(".ingredients-list");
+      let ingredientListItems = document.querySelectorAll(
+        ".ingredients-list-item"
+      );
+      for (let i = 0; i < ingredientListItems.length; i += 1) {
         let element = ingredientListItems[i];
 
-        if(element.innerText.includes("Dez")){
-            ingredientList.removeChild(element);
+        if (element.innerText.includes("Nove")) {
+          ingredientList.removeChild(element);
         }
-    }
+        if (element.innerText.includes("Dez")) {
+          ingredientList.removeChild(element);
+        }
+      }
     </script>
   </body>
 </html>
