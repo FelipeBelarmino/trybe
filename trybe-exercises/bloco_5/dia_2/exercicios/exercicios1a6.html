@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      //1
+      let h1 = document.createElement("h1");
+      document.body.appendChild(h1);
+      h1.innerText = "Exercício 5.2 - Javascript DOM como filho da tag body";
+
+      //2
+      let div = document.createElement("div");
+      document.body.appendChild(div).className = "main-content";
+
+      //3
+      let divCenter = document.createElement("div");
+      div.appendChild(divCenter).className = "center-content";
+
+      //4
+      let h1DivCenter = document.createElement("h1");
+      divCenter.appendChild(h1DivCenter).innerText =
+        "Este é o H1 filho da divCenter";
+
+      //5
+      let divLeft = document.createElement("div");
+      div.appendChild(divLeft).className = "left-content";
+
+      //6
+      let divRight = document.createElement("div");
+      div.appendChild(divRight).className = "right-content";
+
+      //7
+      let imgLeft = document.createElement("img");
+      divLeft.appendChild(imgLeft).className = "small-image";
+      imgLeft.src = "https://picsum.photos/200";
+
+      //8
+      // let ingredientItems = document.createElement('ul');
+      let divRightUl = document.createElement("ul");
+      divRight.appendChild(divRightUl);
+      divRightUl.className = "ingredients-list";
+      let divRightUlItems = [
+        "Um",
+        "Dois",
+        "Três",
+        "Quatro",
+        "Cinco",
+        "Seis",
+        "Sete",
+        "Oito",
+        "Nove",
+        "Dez",
+      ];
+      let divRightUlList = document.querySelector(".ingredients-list");
+      for (let i = 0; i < divRightUlItems.length; i += 1) {
+        let numero = divRightUlItems[i];
+        let divRightUlListItem = document.createElement("li");
+        divRightUlListItem.innerText = numero;
+        divRightUlListItem.className = "ingredients-list-item";
+        divRightUlList.appendChild(divRightUlListItem);
+      }
+
+      //9
+      let h3_1 = document.createElement("h3");
+      let h3_2 = document.createElement("h3");
+      let h3_3 = document.createElement("h3");
+      div.appendChild(h3_1);
+      div.appendChild(h3_2);
+      div.appendChild(h3_3);
+    </script>
+  </body>
+</html>
