@@ -50,3 +50,7 @@ body{
     font-size: 14px;
 }
 .form-row 
+
+.legacy-form-row{
+    padding: 10px
+}
