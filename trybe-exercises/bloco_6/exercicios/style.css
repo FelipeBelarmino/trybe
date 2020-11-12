@@ -1,0 +1,8 @@
+*{
+    padding: 3px;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
