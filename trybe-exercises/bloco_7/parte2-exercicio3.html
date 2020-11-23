@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parte2 - exercício 3</title>
+  </head>
+  <body>
+    <button>Botão</button><br />
+    <label>Clicks</label>
+
+    <script>
+      let clickCount = 0;
+      document.querySelector('button').addEventListener('click', _ => {
+        clickCount += 1;
+        document.querySelector('label').innerText = clickCount;
+      });
+    </script>
+  </body>
+</html>
